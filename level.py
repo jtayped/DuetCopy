@@ -73,7 +73,7 @@ class Level:
 
     def generateBackgroundBlock(self, onScreen=False):
         width = height = random.randint(30, 200)
-        speed = random.randint(1, 3)
+        speed = random.random()*self.obstacleSpeed/2.5
 
         if onScreen:
             pos = (random.randint(0, WIDTH-width), random.randint(-HEIGHT/2, HEIGHT-height))
